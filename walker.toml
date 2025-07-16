@@ -1,11 +1,11 @@
 app_launch_prefix = ""
 terminal_title_flag = ""
-locale = ""
+locale = "es-MX"
 close_when_open = false
 theme = "default"
 monitor = ""
 hotreload_theme = false
-as_window = false
+as_window = false 
 timeout = 0
 disable_click_to_close = false
 force_keyboard_focus = false
@@ -79,11 +79,6 @@ placeholder = "Bookmarks"
 name = "bookmarks"
 icon = "bookmark"
 switcher_only = true
-
-[[builtins.bookmarks.entries]]
-label = "Walker"
-url = "https://github.com/abenz1267/walker"
-keywords = ["walker", "github"]
 
 [builtins.xdph_picker]
 hidden = true
