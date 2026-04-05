@@ -16,6 +16,7 @@
         "network#wifi",
 	"network#eth",
 	"network#tun0",
+	"network#proton0",
 	"bluetooth",
         "cpu",
         "memory",
@@ -78,6 +79,13 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-disconnected": "",
 	"on-click": "ip -4 addr show tun0 | grep -oP '(?<=inet\\s)\\d+(\\.\\d+){3}' | wl-copy"
+    },
+        "network#proton0": {
+        "interface": "proton0", // To force the use of this interface
+        "format-ethernet": "proton activated",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-disconnected": "No proton",
+	"on-click": "ip -4 addr show proton0 | grep -oP '(?<=inet\\s)\\d+(\\.\\d+){3}' | wl-copy"
     },
     "bluetooth": {
         "format": "󰂯 {status}",
